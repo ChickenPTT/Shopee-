@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body > div{
+    margin: auto;
+}
+.btn{
+    padding: 12px 48px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: opacity 0.2s ease;
+    min-width: 120px;
+}
+/* modifier */
+.btn--size-s{
+    padding: 5px 20px;
+}
+.btn--size-l{
+
+padding: 22px 68px;
+}
+/* .btn--disabled, .btn[disabled] {
+    opacity: 0.5 !important;
+    pointer-events: none;
+  } */
+/* element */
+.btn + .btn{
+    margin-left: 30px;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+
+.btn__succes{
+    background-color: #71be34;
+}
+.btn__warm{
+    background-color: #ffb702;
+}
+.btn__danger{
+    background-color: #ff623d;
+}
+
+/* messs */
+
+#toast{
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+.toast{
+    min-width: 400px;
+    max-width: 450px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 2px;
+    border-left: 4px solid;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    animation: showmes ease .3s, fakeout linear 1s 3s forwards;
+}
+@keyframes showmes {
+    from {
+        opacity: 0;
+        transform:  translateX(calc(100% + 32px)) ;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes fakeout {
+    to{
+        opacity: 0;
+    }
+
+}
+.toast + .toast {
+    margin-top: -45px;
+}
+
+.toast__closer, .toast__warning, .toast__danger, .toast__info,
+.toast__success{
+    font-size: 25px;
+    padding: 0px 16px;
+}
+
+.toast__closer{
+    cursor: pointer;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.3)
+}
+.toast__closer:hover{
+    opacity: 0.4;
+}
+
+.toast__body{
+    flex-grow: 1;
+}
+.toast__title{
+   font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.toast__mes{
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.toast--success{
+    border-color: #49ce68 ;
+}
+.toast--info{
+    border-color: #2c72ce;
+}
+.toast--warning{
+    border-color: #ffb702;
+}
+.toast--error{
+    border-color: #ff623d;
+}
+.toast__success{
+    color: #49ce68;
+}
+.toast__info{
+    color: #2c72ce;
+}
+.toast__warning{
+    color: #ffb702;
+}
+.toast__danger{
+    color: #ff623d;
+}
+
+
+  

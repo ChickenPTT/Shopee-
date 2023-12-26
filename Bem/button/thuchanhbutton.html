@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+   <div id="toast">
+    <div class="toast toast--success">
+        <div class="toast__success ">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Success</h3>
+            <p class="toast__mes">©2023 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination</p>
+        </div>
+        <div class="toast__closer">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+   </div>
+
+    <div>
+        <button class="btn btn__succes btn--disabled" >GO TO NEXT APPROVAL</button >
+        <button class="btn btn__warm" >OK</button >
+        <button class="btn btn__danger" >TRY AGAIN </button>
+    </div>
+    
+    <!-- <div>
+        <button class="btn btn__succes btn--size-l" >GO TO NEXT APPROVAL</button >
+        <button class="btn btn__warm btn--size-l" >OK</button >
+        <button class="btn btn__danger btn--size-l" >TRY AGAIN </button>
+    </div> -->
+</body>
+<script>
+    function toast({ title = "", message = "", type = "info", duration = 3000 }) {
+        const main = document.getElementById("toast");
+        if (main) {
+          const toast = document.createElement("div");
+        }
+    }
+    
+  
+</script>
+</html>
