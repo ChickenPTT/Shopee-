@@ -4,10 +4,15 @@
     --white-color: #fff;
     --black-color:#000;
     --text-color: #333;
+    --border-color: #dbdbdb;
+    
 }
 
 *{
     box-sizing: initial;
+    margin: 0;
+    padding: 0;
+    
 }
 
 html{
@@ -46,10 +51,14 @@ html{
         opacity: 1;
     }
 }
+.p32 {
+    padding: 3.2rem;
+}
 
 /* Modal */
 
 .modal {
+    display: flex;
     position:fixed;
     top: 0;
     bottom: 0;
@@ -62,4 +71,11 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body{
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    z-index: 1;
 }

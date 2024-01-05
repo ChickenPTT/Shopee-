@@ -257,3 +257,48 @@ display: block;
 .header__language-list-changeLanguage:hover{
     color: var(--primary-color);
 }
+
+
+/* Authen */
+.authen-form{
+    width: 500px;
+}
+.authen-form-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    
+}
+.authen-form-heading{
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: var(--black-color);
+}
+.authen-form-switch-btn{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* input Authen */
+
+.authen-form__form{
+    
+}
+.authen-form__group{
+    
+}
+.authen-form__input {
+    width: 100%;
+    height: 15px;
+    padding: 8px;
+    font-size: 1.4rem;
+    margin-top: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+.authen-form__input:focus{
+    border-color: #888;
+    
+}
